@@ -3,6 +3,6 @@
     public class UpdateAdminDto
     {
         public int AdminId { get; set; }
-        public int AdminName { get; set; }
+        public string AdminName { get; set; }
     }
 }

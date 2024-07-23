@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace KitapMagaza.EntityLayer.Concrete
+namespace BookStore.EntityLayer.Concrete
 {
     public class BasketTotal
     {
+        public int Id { get; set; }
         public string UserId { get; set; }
         public List<BasketItem> BasketItems { get; set; }
-        public decimal TotalPrice { get => BasketItems.Sum(x => x.Price * x.Quantity); }
+        public decimal TotalPrice => BasketItems?.Sum(x => x.Price * x.Quantity) ?? 0;
+        public DateTime CreatedDate { get; set; }
     }
 }

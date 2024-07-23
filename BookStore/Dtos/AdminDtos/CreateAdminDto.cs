@@ -2,6 +2,6 @@
 {
     public class CreateAdminDto
     {
-        public int AdminName { get; set; }
+        public string AdminName { get; set; }
     }
 }

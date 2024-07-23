@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KitapMagaza.EntityLayer.Concrete
+namespace BookStore.EntityLayer.Concrete
 {
     public class Selling
     {
@@ -15,7 +15,6 @@ namespace KitapMagaza.EntityLayer.Concrete
         public DateTime BuyingDate { get; set; }
         public DateTime SellingDate { get; set; }
         public Book Book { get; set; }
-        //public AppUser AppUser { get; set; }
         public Employee Employee { get; set; }
     }
 }
